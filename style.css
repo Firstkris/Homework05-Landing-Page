@@ -41,13 +41,15 @@ body {
     padding-inline: 20%;
     /* border: 1px solid red; */
 
-    position: fixed;
+    /* position: fixed; */
+   
     
     
 }
 
 .under-construct * {
     opacity: 70%;
+
 }
 
 a:hover {
@@ -58,7 +60,6 @@ a:hover {
 h1 {
     font-size: 4rem;
     padding-bottom: 2rem;
-
     
 }
 
@@ -74,7 +75,8 @@ h3 {
     height: 1rem;
     box-shadow: 2px 2px 5px;
     border-radius: 0.5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+   
 
     
 }
@@ -83,7 +85,25 @@ h3 {
     background-color: darkcyan;
     width: 80%;
     height: 1rem;
+    border-radius: 0.5rem;
+    animation: leftToRight 5s ease-out;
+
+
 }
+
+@keyframes leftToRight {
+    0% {
+        width: 0%;
+        background-color: goldenrod;
+    }
+
+    100% {
+        width: 80%;
+        background-color: darkcyan;
+        /* box-shadow: 0px 0px 40px white; */
+    }
+}
+
 
 .percent {
     display: flex;
@@ -93,7 +113,7 @@ h3 {
     letter-spacing: 0;
     padding-top: 0.5rem;
     padding-bottom: 2rem;
-
+  
 
 }
 
